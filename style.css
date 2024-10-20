@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(122, 28, 172);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+aside {
+    background-color: plum;
+    /* background-color: rgb(86, 0, 123); */
+    padding: 32px;
+    width: 15%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    width: 85%;
+    padding: 36px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+p.song {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p.sec-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.section-title p {
+    line-height: 1.5;
+}
+
+.section-members {
+   width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: rgb(229, 216, 255);
+}
+
+.members {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.member-card p {
+    margin-top: 10px;
+}
+
+.member-card img {
+    width: 150px;
+    height: 260px;
+    opacity: 0.6;
+}
+
+.member-card img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition :0.3s;
+}
+
+.section-album {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-sec-album {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.favorite-album {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-play {
+    width: 30%;
+}
+
+.album-play img {
+    width: 100%;
+}
+
+.album-list {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+}
+
+.song-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(205, 188, 238);
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+/* Halaman  Formulir */
+
+section {
+    background-color: rgb(235, 211, 248);
+}
+table td {
+    padding: 10px 0px;
+    width: 250px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+/* halaman merchandise */
+
+.section-table-album {
+    overflow: auto;
+    height: 500px;
+    width: 80%;
+}
+
+table.formulir{
+    width: 100%;
+}
+
+.section-table-album tr.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: blueviolet;
+}
+
+.section-table-album tr.sticky:hover {
+    background-color: blueviolet;
+}
+
+.section-table-album tr:nth-child(even) {
+    background-color: azure;
+}
+
+.section-table-album tr:hover {
+    cursor: pointer;
+    background-color: plum;
+}
+
+table td {
+    padding: 10px 0px;
+    width: 250px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+.button-submit {
+    text-align: right;
+}
+
+.product {
+    text-align: center;
+}
+
+table button {
+    background-color: rgb(187, 134, 223);
+    color: white;
+    border: 0;
+    border-radius: 100px;
+    padding: 15px 25px;
+}
+
+/* halaman album */
+table td,th {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+
+@media (max-width: 576px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .favorite-album {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .album-play {
+        width: 100%;
+        display: flex;
+        gap: 24px;
+    }
+
+    .album-play img {
+        width: 50%;
+    }
+
+    .album-list {
+        width: 100%;
+    }
+
+    .section-title p.sec-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .section-table-album {
+        width: 100%;
+    }
+
+    table button {
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 992px) {
+    aside {
+        width: 20%;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    .section-table-album {
+        height: 100vh;
+        width: 90%;
+    }
+    
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Formulir</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="image/logo.png" alt="" width="50">
+
+        <div class="btn-in">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </nav>
+
+    <main>
+        <aside>
+            <a href="index.html">About</a>
+            <a href="#">Merchandise</a>
+            <a href="album.html">Lagu Favorite</a>
+        </aside>
+
+        <section>
+            <div class="section-title">
+                <p class="sec-title">Merchandise</p>
+                <p>Pesan Merchandise untuk menambah koleksi Anda</p>
+            </div>
+
+            <form method="get">
+
+                <table border="0" cellpadding="0" class="formulir">
+                    <tr>
+                        <td><label for="nama">Nama</label></td>
+                        <td><input type="text" name="nama" id="nama"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="text" name="email" id="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="no-hp">No Handphone</label></td>
+                        <td><input type="text" name="no-hp" id="no-hp" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="alamat">Alamat Tujuan</label></td>
+                        <td><input type="text" name="alamat" id="alamat" required></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><label for="produk-pesanan">Produk Pesanan</label></td>
+                    </tr>
+
+                    <tr>
+                        <td class="product"><input type="checkbox" name="" ><img src="image/ganci.png" width="150" required></td>
+                        <td class="product"><input type="checkbox" name="" ><img src="image/bt21.png" width="150" required></td>
+                    </tr>
+
+                    <tr>
+                        <td class="product"><input type="checkbox" name="" ><img src="image/card.png" width="150" required ></td>
+                        <td class="product"><input type="checkbox" name="" ><img src="image/sticker.png" width="150" required></td>
+                    </tr>
+
+                    <tr>
+                        <td class="product"><input type="checkbox" name="" ><img src="image/armybomb.png" width="150" required ></td>
+                        <td class="product"><input type="checkbox" name="" ><img src="image/hoodie.png" width="150" required></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="button-submit"><Button type="submit">Kirim Pesanan</Button></td>
+                    </tr>
+
+                </table>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
